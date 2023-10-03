@@ -13,7 +13,10 @@
     font-family: "Gotham Medium";
     src: url("fonts/Gotham-Font/GothamMedium.ttf");
 }
-
+@font-face {
+    font-family: "Gotham Book";
+    src: url("fonts/Gotham-Font/GothamBook.ttf");
+}
 #anton_block1 {
     width: 1600px;
     height: 880px;
@@ -22,8 +25,13 @@
 
 #anton_block2 {
     width: 1600px;
-    height: 739px;
+    height: 740px;
     background-image: url(resources/block2_img.png);
+    display:flex;
+    align-content: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 #header {
@@ -185,4 +193,55 @@
 #scroll>img {
     height: 13px;
     width: 18px;
+}
+#feature_wrap
+{
+    display:flex;
+    width:1200px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom:100px;
+    padding-bottom: 17px;
+}
+.feature{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.img_wrap
+{
+    background-image: url(resources/block2_circle.png); 
+    width:133px;
+    height:133px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+.img_wrap>i::before{
+    color:white;
+    font-size:35px;
+}
+#feature_one>img{
+    width:34px;
+    height:34px;
+}
+.feature_text{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.caption{
+    font-family:'Gotham Medium',sans-serif;
+    color:white;
+    font-size:18px;
+}
+.text_filler{
+    font-family:'Gotham Book',sans-serif;
+    color:white;
+    text-align: center;
+    line-height:1.3em;
+    font-size:15px;
 }
