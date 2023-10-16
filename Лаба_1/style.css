@@ -109,11 +109,21 @@
     border-bottom: 5px solid rgb(17, 116, 158);
 }
 
+#icons>i{
+    height:inherit;
+    height: 108px;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid transparent;
+    border-bottom: 5px solid transparent;
+}
 #icons>i::before {
     color: white;
     font-size: 18px;
 }
-
+#icons>i:hover{
+    border-bottom: 5px solid rgb(17, 116, 158);
+}
 #creatives_wrap {
     display: flex;
     height: 765px;
@@ -133,7 +143,7 @@
 
 #text {
     padding-right: 12px;
-    padding-top: 41px;
+    padding-top: 42px;
     padding-bottom: 13px;
     height: 371px;
     display: flex;
@@ -142,14 +152,14 @@
     align-items: center;
 }
 
-#creatives>p {
+#creatives {
     display: inline-flex;
     font-size: 114pt;
     font-weight: 700;
     color: white;
     margin: 0;
     justify-content: center;
-    padding-top: 5px;
+    padding-top: 25px;
     font-family: 'Gotham Bold', sans-serif;
     letter-spacing: -0.05em;
 }
@@ -162,7 +172,7 @@
     font-size: 19pt;
     letter-spacing: 0.7em;
     margin-left: 23px;
-    margin-top: 9px;
+    margin-top: 7px;
 }
 
 #scroll_container {
@@ -267,7 +277,7 @@
     font-family: 'Gotham Medium', sans-serif;
     font-size: 29pt;
     position: absolute;
-    margin-top:15px;
+    padding-top:20px;
     letter-spacing: -0.03em;
 }
 
@@ -277,7 +287,8 @@
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size:180pt;
-    margin-top:38px;
+    margin:0;
+    padding-top:38px;
 }
 .line{
     display: flex;
