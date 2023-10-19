@@ -7,6 +7,14 @@
         href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;500;700&family=Montserrat:wght@100;400;600;700;800;900&family=PT+Sans&family=PT+Sans+Narrow&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/6abc4ce341.js" crossorigin="anonymous"></script>
+    <script>
+        function scrollToNextElement() {
+            var nextElement = document.getElementById('anton_block2');
+            if (nextElement) {
+                nextElement.scrollIntoView({ behaviour: 'smooth' });
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -39,7 +47,7 @@
                     </div>
                     <div id="scroll_container">
                         <p>Scroll Down</p>
-                        <div id="scroll">
+                        <div onclick="scrollToNextElement()" id="scroll">
                             <img src="resources/birdie.png">
                         </div>
                     </div>
@@ -53,7 +61,7 @@
             </div>
             <div id="feature_wrap">
                 <div class="feature">
-                    <div class="img_wrap"><img  src="resources/edit.png"></div>
+                    <div class="img_wrap"><img src="resources/edit.png"></div>
                     <div class="feature_text">
                         <p class="caption">FEATURE ONE</p>
                         <p class="text_filler">
@@ -101,7 +109,7 @@
             <div class="line">
                 <div class="agency_news-1">
                     <div class="agency-text1">
-                        <p class="agency-text-line1">Jan 4,2016  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;  In Culture</p>
+                        <p class="agency-text-line1">Jan 4,2016 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; In Culture</p>
                         <p class="agency-text-line2">AKITA INU DOG</p>
                         <p class="agency-text-line3">
                             Cum sociis natoque penatibus et magnis dis parturient montes, <br>
