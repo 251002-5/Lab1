@@ -825,6 +825,11 @@ textarea {
     resize: none;
 }
 
+    textarea::-webkit-input-placeholder {
+        color: #FFFFFF;
+        font-family: "Gotham-Book-It", sans-serif;
+    }
+
 .end_area {
     width: 1600px;
     height: 116px;
